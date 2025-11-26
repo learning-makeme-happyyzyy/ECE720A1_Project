@@ -1,0 +1,135 @@
+[
+  {
+    "name": "Value to clipboard",
+    "description": "Copies the results of a selected expression to the system clipboard",
+    "binding": "clipr_result",
+    "interactive": "false",
+    "package": "clipr"
+  },
+  {
+    "name": "Output to clipboard",
+    "description": "Copies the console output of a selected expression to the system clipboard",
+    "binding": "clipr_output",
+    "interactive": "false",
+    "package": "clipr"
+  },
+  {
+    "name": "Run a test file",
+    "description": "Run the current test file, using `devtools::test_active_file()`.",
+    "binding": "test_active_file",
+    "interactive": "true",
+    "package": "devtools"
+  },
+  {
+    "name": "Report test coverage for a file",
+    "description": "Calculate and report test coverage for the current test file, using `devtools::test_coverage_active_file()`.",
+    "binding": "test_coverage_active_file",
+    "interactive": "true",
+    "package": "devtools"
+  },
+  {
+    "name": "Report test coverage for a package",
+    "description": "Calculate and report the test coverage for the current package, using `devtools::test_coverage()`.",
+    "binding": "test_coverage",
+    "interactive": "true",
+    "package": "devtools"
+  },
+  {
+    "name": "Document a package",
+    "description": "A wrapper for `roxygen`'s `roxygen2::roxygenize()`",
+    "binding": "document",
+    "interactive": "true",
+    "package": "devtools"
+  },
+  {
+    "name": "Run examples",
+    "description": "Runs R code in examples using `devtools::run_examples()`",
+    "binding": "run_examples",
+    "interactive": "true",
+    "package": "devtools"
+  },
+  {
+    "name": "Lint current file",
+    "description": "Runs lintr::lint on the current file",
+    "binding": "addin_lint",
+    "interactive": "false",
+    "package": "lintr"
+  },
+  {
+    "name": "Lint current package",
+    "description": "Runs lintr::lint_package",
+    "binding": "addin_lint_package",
+    "interactive": "false",
+    "package": "lintr"
+  },
+  {
+    "name": "Build pkgdown",
+    "description": "Runs pkgdown on the current package",
+    "binding": "build_site_external",
+    "interactive": "true",
+    "package": "pkgdown"
+  },
+  {
+    "name": "Render reprex...",
+    "description": "Run `reprex::reprex()` to prepare a reproducible example for sharing.",
+    "binding": "reprex_addin",
+    "interactive": "true",
+    "package": "reprex"
+  },
+  {
+    "name": "Reprex selection",
+    "description": "Prepare reprex from current selection",
+    "binding": "reprex_selection",
+    "interactive": "false",
+    "package": "reprex"
+  },
+  {
+    "name": "Set style",
+    "description": "Prompt for and set the style transformers used by all styler addins",
+    "binding": "set_style_transformers",
+    "interactive": "true",
+    "package": "styler"
+  },
+  {
+    "name": "Style selection",
+    "description": "Pretty-print selection",
+    "binding": "style_selection",
+    "interactive": "true",
+    "package": "styler"
+  },
+  {
+    "name": "Style active file",
+    "description": "Pretty-print active file",
+    "binding": "style_active_file",
+    "interactive": "true",
+    "package": "styler"
+  },
+  {
+    "name": "Style active package",
+    "description": "Pretty-print active package",
+    "binding": "style_active_pkg",
+    "interactive": "true",
+    "package": "styler"
+  },
+  {
+    "name": "Training Run",
+    "description": "Execute a training run with the current source document",
+    "binding": "add_in_training_run",
+    "interactive": "false",
+    "package": "tfruns"
+  },
+  {
+    "name": "View Latest Run",
+    "description": "View the most recent training run",
+    "binding": "add_in_view_latest_run",
+    "interactive": "false",
+    "package": "tfruns"
+  },
+  {
+    "name": "View Run History",
+    "description": "View all training runs",
+    "binding": "add_in_view_run_history",
+    "interactive": "false",
+    "package": "tfruns"
+  }
+]

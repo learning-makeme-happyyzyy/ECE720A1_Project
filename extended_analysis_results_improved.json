@@ -1,0 +1,1302 @@
+{
+  "random_forest": {
+    "https://github.com/apache/kafka.git": {
+      "auc": 0.7775524208222032,
+      "f1": 0.7484385948090752,
+      "accuracy": 0.7799177146405838,
+      "recall": 0.720436964352496,
+      "precision": 0.7840340590857595
+    },
+    "https://github.com/apache/archiva.git": {
+      "auc": 0.7499933998104351,
+      "f1": 0.6684056606698345,
+      "accuracy": 0.7862989886219974,
+      "recall": 0.639577326993356,
+      "precision": 0.7078947438818128
+    },
+    "https://github.com/apache/activemq.git": {
+      "auc": 0.6839144988184489,
+      "f1": 0.5109993793202352,
+      "accuracy": 0.8423380486916399,
+      "recall": 0.4188854661891589,
+      "precision": 0.6709833007494298
+    },
+    "https://github.com/apache/kylin.git": {
+      "auc": 0.6869231187938163,
+      "f1": 0.5108103257950076,
+      "accuracy": 0.8325943165115139,
+      "recall": 0.44582095784885933,
+      "precision": 0.6193674843674843
+    },
+    "https://github.com/apache/phoenix.git": {
+      "auc": 0.9298018053981745,
+      "f1": 0.9171453350746391,
+      "accuracy": 0.9846649686520376,
+      "recall": 0.8613434019092587,
+      "precision": 0.9821337347199416
+    },
+    "https://github.com/apache/tez.git": {
+      "auc": 0.7663633538013452,
+      "f1": 0.6804409531851544,
+      "accuracy": 0.792989921612542,
+      "recall": 0.6877978195260556,
+      "precision": 0.6855643960375826
+    },
+    "https://github.com/apache/helix.git": {
+      "auc": 0.6956019122513668,
+      "f1": 0.58086303332742,
+      "accuracy": 0.7475274725274725,
+      "recall": 0.5404954651083683,
+      "precision": 0.637111927705256
+    },
+    "https://github.com/apache/commons-math": {
+      "auc": 0.7706582032843283,
+      "f1": 0.6810650909685129,
+      "accuracy": 0.80625,
+      "recall": 0.6675201902254001,
+      "precision": 0.7036019134739936
+    },
+    "https://github.com/apache/mahout": {
+      "auc": 0.7236383867970622,
+      "f1": 0.6443846422541022,
+      "accuracy": 0.7542124542124542,
+      "recall": 0.6107357263249076,
+      "precision": 0.6876229221269388
+    },
+    "https://github.com/apache/nifi.git": {
+      "auc": 0.6978756135660055,
+      "f1": 0.5594899774319845,
+      "accuracy": 0.7800549450549451,
+      "recall": 0.514594175774376,
+      "precision": 0.6245195404434535
+    }
+  },
+  "xgboost": {
+    "https://github.com/apache/kafka.git": {
+      "auc": 0.7644684139105107,
+      "f1": 0.7337620224158645,
+      "accuracy": 0.765804999223723,
+      "recall": 0.7135627027115001,
+      "precision": 0.7617382341605944
+    },
+    "https://github.com/apache/archiva.git": {
+      "auc": 0.6790776099920935,
+      "f1": 0.5726805869404662,
+      "accuracy": 0.7194690265486725,
+      "recall": 0.5554930636779751,
+      "precision": 0.6001706781581245
+    },
+    "https://github.com/apache/activemq.git": {
+      "auc": 0.6028207986550947,
+      "f1": 0.34952441482839336,
+      "accuracy": 0.7960658126403982,
+      "recall": 0.28126522529536113,
+      "precision": 0.47574428146396225
+    },
+    "https://github.com/apache/kylin.git": {
+      "auc": 0.657201614470828,
+      "f1": 0.4530049989155958,
+      "accuracy": 0.8153274538624857,
+      "recall": 0.395722522617531,
+      "precision": 0.5470407491059665
+    },
+    "https://github.com/apache/phoenix.git": {
+      "auc": 0.9225874345872905,
+      "f1": 0.8822210054370786,
+      "accuracy": 0.9784090909090909,
+      "recall": 0.8531199022631247,
+      "precision": 0.9188662635341401
+    },
+    "https://github.com/apache/tez.git": {
+      "auc": 0.7531994574954749,
+      "f1": 0.6626548744140309,
+      "accuracy": 0.7856103023516238,
+      "recall": 0.6565172285226731,
+      "precision": 0.685132164169943
+    },
+    "https://github.com/apache/helix.git": {
+      "auc": 0.6750844367509323,
+      "f1": 0.5498018922116826,
+      "accuracy": 0.7366459627329193,
+      "recall": 0.4970957304344401,
+      "precision": 0.6219883006675934
+    },
+    "https://github.com/apache/commons-math": {
+      "auc": 0.7578861295158703,
+      "f1": 0.6620963565118131,
+      "accuracy": 0.79375,
+      "recall": 0.6537811451417148,
+      "precision": 0.6811287704231253
+    },
+    "https://github.com/apache/mahout": {
+      "auc": 0.6869169805483084,
+      "f1": 0.5941780758871076,
+      "accuracy": 0.7231934731934732,
+      "recall": 0.5565097333547786,
+      "precision": 0.6426438045597085
+    },
+    "https://github.com/apache/nifi.git": {
+      "auc": 0.6545525771280434,
+      "f1": 0.4903805017403537,
+      "accuracy": 0.7511996336996337,
+      "recall": 0.44289969748868524,
+      "precision": 0.5566018636842435
+    }
+  },
+  "summary": {
+    "rf_mean_auc": 0.7482322713343186,
+    "xgb_mean_auc": 0.7153795453054447,
+    "improvement": -0.0328527260288739,
+    "t_statistic": 4.057041180504854,
+    "p_value": 0.0028545930848996046,
+    "significant": true
+  },
+  "shap_analysis": {
+    "https://github.com/apache/kafka.git": {
+      "XGBoost_top_features": [
+        {
+          "feature": "LOC Left Side",
+          "mean_abs_shap": 0.4404214322566986,
+          "feature_mapped": "LOC Left Side"
+        },
+        {
+          "feature": "# Previous Refactorings",
+          "mean_abs_shap": 0.374102383852005,
+          "feature_mapped": "# Previous Refactorings"
+        },
+        {
+          "feature": "Dev Refactoring Experience",
+          "mean_abs_shap": 0.25634729862213135,
+          "feature_mapped": "Dev Refactoring Experience"
+        },
+        {
+          "feature": "LOC Right Side",
+          "mean_abs_shap": 0.23730142414569855,
+          "feature_mapped": "LOC Right Side"
+        },
+        {
+          "feature": "Age",
+          "mean_abs_shap": 0.20974233746528625,
+          "feature_mapped": "Age"
+        },
+        {
+          "feature": "METHOD_DECLARATION",
+          "mean_abs_shap": 0.19592365622520447,
+          "feature_mapped": "METHOD_DECLARATION"
+        },
+        {
+          "feature": "# of left side locations",
+          "mean_abs_shap": 0.17395280301570892,
+          "feature_mapped": "# of left side locations"
+        },
+        {
+          "feature": "Dev Refactoring Commit Experience",
+          "mean_abs_shap": 0.16607311367988586,
+          "feature_mapped": "Dev Refactoring Commit Experience"
+        },
+        {
+          "feature": "refType_Add Parameter",
+          "mean_abs_shap": 0.16524311900138855,
+          "feature_mapped": "refType_Add Parameter"
+        },
+        {
+          "feature": "# of Refactorings",
+          "mean_abs_shap": 0.15892639756202698,
+          "feature_mapped": "# of Refactorings"
+        }
+      ],
+      "RandomForest_top_features": [
+        {
+          "feature": "LOC Left Side",
+          "mean_abs_shap": 0.024209143085122713,
+          "feature_mapped": "LOC Left Side"
+        },
+        {
+          "feature": "LOC Right Side",
+          "mean_abs_shap": 0.022024034226470368,
+          "feature_mapped": "LOC Right Side"
+        },
+        {
+          "feature": "METHOD_DECLARATION",
+          "mean_abs_shap": 0.021942003217394482,
+          "feature_mapped": "METHOD_DECLARATION"
+        },
+        {
+          "feature": "# Previous Refactorings",
+          "mean_abs_shap": 0.02127774588547652,
+          "feature_mapped": "# Previous Refactorings"
+        },
+        {
+          "feature": "# of Refactorings",
+          "mean_abs_shap": 0.01775099550441721,
+          "feature_mapped": "# of Refactorings"
+        },
+        {
+          "feature": "SINGLE_VARIABLE_DECLARATION",
+          "mean_abs_shap": 0.017035742152889784,
+          "feature_mapped": "SINGLE_VARIABLE_DECLARATION"
+        },
+        {
+          "feature": "# of left side locations",
+          "mean_abs_shap": 0.016844953459009247,
+          "feature_mapped": "# of left side locations"
+        },
+        {
+          "feature": "# of Files",
+          "mean_abs_shap": 0.016247908107141423,
+          "feature_mapped": "# of Files"
+        },
+        {
+          "feature": "refType_Add Parameter",
+          "mean_abs_shap": 0.015642409722563755,
+          "feature_mapped": "refType_Add Parameter"
+        },
+        {
+          "feature": "refactoryCount",
+          "mean_abs_shap": 0.015377352059693719,
+          "feature_mapped": "refactoryCount"
+        }
+      ]
+    },
+    "https://github.com/apache/archiva.git": {
+      "XGBoost_top_features": [
+        {
+          "feature": "# of Files",
+          "mean_abs_shap": 0.4800751805305481,
+          "feature_mapped": "# of Files"
+        },
+        {
+          "feature": "SINGLE_VARIABLE_DECLARATION",
+          "mean_abs_shap": 0.286204993724823,
+          "feature_mapped": "SINGLE_VARIABLE_DECLARATION"
+        },
+        {
+          "feature": "LOC Left Side",
+          "mean_abs_shap": 0.11718495190143585,
+          "feature_mapped": "LOC Left Side"
+        },
+        {
+          "feature": "VARIABLE_DECLARATION_STATEMENT",
+          "mean_abs_shap": 0.11471071094274521,
+          "feature_mapped": "VARIABLE_DECLARATION_STATEMENT"
+        },
+        {
+          "feature": "Dev Refactoring Experience",
+          "mean_abs_shap": 0.10321154445409775,
+          "feature_mapped": "Dev Refactoring Experience"
+        },
+        {
+          "feature": "refType_Add Parameter",
+          "mean_abs_shap": 0.08009076863527298,
+          "feature_mapped": "refType_Add Parameter"
+        },
+        {
+          "feature": "LOC Right Side",
+          "mean_abs_shap": 0.07909105718135834,
+          "feature_mapped": "LOC Right Side"
+        },
+        {
+          "feature": "Dev Refactoring Commit Experience",
+          "mean_abs_shap": 0.0769253522157669,
+          "feature_mapped": "Dev Refactoring Commit Experience"
+        },
+        {
+          "feature": "refType_Encapsulate Attribute",
+          "mean_abs_shap": 0.07210560142993927,
+          "feature_mapped": "refType_Encapsulate Attribute"
+        },
+        {
+          "feature": "refType_Rename Parameter",
+          "mean_abs_shap": 0.06593500822782516,
+          "feature_mapped": "refType_Rename Parameter"
+        }
+      ],
+      "RandomForest_top_features": [
+        {
+          "feature": "# of Files",
+          "mean_abs_shap": 0.035856614317726375,
+          "feature_mapped": "# of Files"
+        },
+        {
+          "feature": "SINGLE_VARIABLE_DECLARATION",
+          "mean_abs_shap": 0.03245519066009366,
+          "feature_mapped": "SINGLE_VARIABLE_DECLARATION"
+        },
+        {
+          "feature": "METHOD_DECLARATION",
+          "mean_abs_shap": 0.02043096725761876,
+          "feature_mapped": "METHOD_DECLARATION"
+        },
+        {
+          "feature": "LOC Right Side",
+          "mean_abs_shap": 0.019974711118817184,
+          "feature_mapped": "LOC Right Side"
+        },
+        {
+          "feature": "LOC Left Side",
+          "mean_abs_shap": 0.018855805943936252,
+          "feature_mapped": "LOC Left Side"
+        },
+        {
+          "feature": "refType_Add Parameter",
+          "mean_abs_shap": 0.01717401884739578,
+          "feature_mapped": "refType_Add Parameter"
+        },
+        {
+          "feature": "refactoryCount",
+          "mean_abs_shap": 0.016800208400888413,
+          "feature_mapped": "refactoryCount"
+        },
+        {
+          "feature": "refType_Change Parameter Type",
+          "mean_abs_shap": 0.015098306839734949,
+          "feature_mapped": "refType_Change Parameter Type"
+        },
+        {
+          "feature": "TYPE",
+          "mean_abs_shap": 0.014249029028789956,
+          "feature_mapped": "TYPE"
+        },
+        {
+          "feature": "VARIABLE_DECLARATION_STATEMENT",
+          "mean_abs_shap": 0.013554625903244123,
+          "feature_mapped": "VARIABLE_DECLARATION_STATEMENT"
+        }
+      ]
+    },
+    "https://github.com/apache/activemq.git": {
+      "XGBoost_top_features": [
+        {
+          "feature": "ANNOTATION",
+          "mean_abs_shap": 0.5242060422897339,
+          "feature_mapped": "ANNOTATION"
+        },
+        {
+          "feature": "Dev Refactoring Experience",
+          "mean_abs_shap": 0.22748692333698273,
+          "feature_mapped": "Dev Refactoring Experience"
+        },
+        {
+          "feature": "Dev Refactoring Commit Experience",
+          "mean_abs_shap": 0.17611882090568542,
+          "feature_mapped": "Dev Refactoring Commit Experience"
+        },
+        {
+          "feature": "# of Refactorings",
+          "mean_abs_shap": 0.1459694802761078,
+          "feature_mapped": "# of Refactorings"
+        },
+        {
+          "feature": "# of unique code elements",
+          "mean_abs_shap": 0.1363241970539093,
+          "feature_mapped": "# of unique code elements"
+        },
+        {
+          "feature": "SINGLE_VARIABLE_DECLARATION",
+          "mean_abs_shap": 0.12983328104019165,
+          "feature_mapped": "SINGLE_VARIABLE_DECLARATION"
+        },
+        {
+          "feature": "RETURN_STATEMENT",
+          "mean_abs_shap": 0.11565633118152618,
+          "feature_mapped": "RETURN_STATEMENT"
+        },
+        {
+          "feature": "refType_Add Parameter",
+          "mean_abs_shap": 0.11530482769012451,
+          "feature_mapped": "refType_Add Parameter"
+        },
+        {
+          "feature": "refType_Change Attribute Type",
+          "mean_abs_shap": 0.1054731160402298,
+          "feature_mapped": "refType_Change Attribute Type"
+        },
+        {
+          "feature": "refType_Change Method Access Modifier",
+          "mean_abs_shap": 0.09806060045957565,
+          "feature_mapped": "refType_Change Method Access Modifier"
+        }
+      ],
+      "RandomForest_top_features": [
+        {
+          "feature": "ANNOTATION",
+          "mean_abs_shap": 0.032427228122649,
+          "feature_mapped": "ANNOTATION"
+        },
+        {
+          "feature": "refType_Add Method Annotation",
+          "mean_abs_shap": 0.02646596207031403,
+          "feature_mapped": "refType_Add Method Annotation"
+        },
+        {
+          "feature": "SINGLE_VARIABLE_DECLARATION",
+          "mean_abs_shap": 0.019579178818279048,
+          "feature_mapped": "SINGLE_VARIABLE_DECLARATION"
+        },
+        {
+          "feature": "refType_Add Parameter",
+          "mean_abs_shap": 0.01581606501349823,
+          "feature_mapped": "refType_Add Parameter"
+        },
+        {
+          "feature": "METHOD_DECLARATION",
+          "mean_abs_shap": 0.015706872359875924,
+          "feature_mapped": "METHOD_DECLARATION"
+        },
+        {
+          "feature": "RETURN_STATEMENT",
+          "mean_abs_shap": 0.014074827876138327,
+          "feature_mapped": "RETURN_STATEMENT"
+        },
+        {
+          "feature": "refType_Change Method Access Modifier",
+          "mean_abs_shap": 0.013312294189485447,
+          "feature_mapped": "refType_Change Method Access Modifier"
+        },
+        {
+          "feature": "# of Refactorings",
+          "mean_abs_shap": 0.012671669933816038,
+          "feature_mapped": "# of Refactorings"
+        },
+        {
+          "feature": "METHOD_INVOCATION",
+          "mean_abs_shap": 0.012367235839199232,
+          "feature_mapped": "METHOD_INVOCATION"
+        },
+        {
+          "feature": "refType_Extract Method",
+          "mean_abs_shap": 0.012289364618620648,
+          "feature_mapped": "refType_Extract Method"
+        }
+      ]
+    },
+    "https://github.com/apache/kylin.git": {
+      "XGBoost_top_features": [
+        {
+          "feature": "TYPE_DECLARATION",
+          "mean_abs_shap": 0.3485351502895355,
+          "feature_mapped": "TYPE_DECLARATION"
+        },
+        {
+          "feature": "Average number of files",
+          "mean_abs_shap": 0.3324526846408844,
+          "feature_mapped": "Average number of files"
+        },
+        {
+          "feature": "refType_Change Parameter Type",
+          "mean_abs_shap": 0.21122486889362335,
+          "feature_mapped": "refType_Change Parameter Type"
+        },
+        {
+          "feature": "refType_Change Variable Type",
+          "mean_abs_shap": 0.16741448640823364,
+          "feature_mapped": "refType_Change Variable Type"
+        },
+        {
+          "feature": "TYPE",
+          "mean_abs_shap": 0.12834778428077698,
+          "feature_mapped": "TYPE"
+        },
+        {
+          "feature": "Age",
+          "mean_abs_shap": 0.09374081343412399,
+          "feature_mapped": "Age"
+        },
+        {
+          "feature": "refType_Change Method Access Modifier",
+          "mean_abs_shap": 0.08794833719730377,
+          "feature_mapped": "refType_Change Method Access Modifier"
+        },
+        {
+          "feature": "Dev Refactoring Commit Experience",
+          "mean_abs_shap": 0.08359561115503311,
+          "feature_mapped": "Dev Refactoring Commit Experience"
+        },
+        {
+          "feature": "# Previous Refactorings",
+          "mean_abs_shap": 0.0821090042591095,
+          "feature_mapped": "# Previous Refactorings"
+        },
+        {
+          "feature": "# of unique code elements",
+          "mean_abs_shap": 0.07518835365772247,
+          "feature_mapped": "# of unique code elements"
+        }
+      ],
+      "RandomForest_top_features": [
+        {
+          "feature": "Average number of files",
+          "mean_abs_shap": 0.03746645503639505,
+          "feature_mapped": "Average number of files"
+        },
+        {
+          "feature": "TYPE_DECLARATION",
+          "mean_abs_shap": 0.03288443253983075,
+          "feature_mapped": "TYPE_DECLARATION"
+        },
+        {
+          "feature": "refType_Change Parameter Type",
+          "mean_abs_shap": 0.0241713844875286,
+          "feature_mapped": "refType_Change Parameter Type"
+        },
+        {
+          "feature": "TYPE",
+          "mean_abs_shap": 0.022317972557410592,
+          "feature_mapped": "TYPE"
+        },
+        {
+          "feature": "FIELD_DECLARATION",
+          "mean_abs_shap": 0.02063116269560637,
+          "feature_mapped": "FIELD_DECLARATION"
+        },
+        {
+          "feature": "refType_Change Variable Type",
+          "mean_abs_shap": 0.018153247691179597,
+          "feature_mapped": "refType_Change Variable Type"
+        },
+        {
+          "feature": "refType_Rename Parameter",
+          "mean_abs_shap": 0.015237362532859098,
+          "feature_mapped": "refType_Rename Parameter"
+        },
+        {
+          "feature": "refType_Change Method Access Modifier",
+          "mean_abs_shap": 0.01497020878021615,
+          "feature_mapped": "refType_Change Method Access Modifier"
+        },
+        {
+          "feature": "refType_Rename Class",
+          "mean_abs_shap": 0.01485427345096585,
+          "feature_mapped": "refType_Rename Class"
+        },
+        {
+          "feature": "SINGLE_VARIABLE_DECLARATION",
+          "mean_abs_shap": 0.013323230484183277,
+          "feature_mapped": "SINGLE_VARIABLE_DECLARATION"
+        }
+      ]
+    },
+    "https://github.com/apache/phoenix.git": {
+      "XGBoost_top_features": [
+        {
+          "feature": "TYPE_DECLARATION",
+          "mean_abs_shap": 0.8495186567306519,
+          "feature_mapped": "TYPE_DECLARATION"
+        },
+        {
+          "feature": "Dev Refactoring Experience",
+          "mean_abs_shap": 0.7822732329368591,
+          "feature_mapped": "Dev Refactoring Experience"
+        },
+        {
+          "feature": "# Previous Refactorings",
+          "mean_abs_shap": 0.7447866201400757,
+          "feature_mapped": "# Previous Refactorings"
+        },
+        {
+          "feature": "# of Files",
+          "mean_abs_shap": 0.5647186636924744,
+          "feature_mapped": "# of Files"
+        },
+        {
+          "feature": "LOC Left Side",
+          "mean_abs_shap": 0.5083752274513245,
+          "feature_mapped": "LOC Left Side"
+        },
+        {
+          "feature": "# of Refactorings",
+          "mean_abs_shap": 0.3967571258544922,
+          "feature_mapped": "# of Refactorings"
+        },
+        {
+          "feature": "# of right side locations",
+          "mean_abs_shap": 0.363986611366272,
+          "feature_mapped": "# of right side locations"
+        },
+        {
+          "feature": "METHOD_DECLARATION",
+          "mean_abs_shap": 0.35183173418045044,
+          "feature_mapped": "METHOD_DECLARATION"
+        },
+        {
+          "feature": "# of unique code elements",
+          "mean_abs_shap": 0.34363803267478943,
+          "feature_mapped": "# of unique code elements"
+        },
+        {
+          "feature": "Age",
+          "mean_abs_shap": 0.29576730728149414,
+          "feature_mapped": "Age"
+        }
+      ],
+      "RandomForest_top_features": [
+        {
+          "feature": "TYPE_DECLARATION",
+          "mean_abs_shap": 0.029896911671149173,
+          "feature_mapped": "TYPE_DECLARATION"
+        },
+        {
+          "feature": "# Previous Refactorings",
+          "mean_abs_shap": 0.02515011019892203,
+          "feature_mapped": "# Previous Refactorings"
+        },
+        {
+          "feature": "# of Files",
+          "mean_abs_shap": 0.02376051061736028,
+          "feature_mapped": "# of Files"
+        },
+        {
+          "feature": "Dev Refactoring Experience",
+          "mean_abs_shap": 0.02147510654000414,
+          "feature_mapped": "Dev Refactoring Experience"
+        },
+        {
+          "feature": "FIELD_DECLARATION",
+          "mean_abs_shap": 0.020850635427784172,
+          "feature_mapped": "FIELD_DECLARATION"
+        },
+        {
+          "feature": "ANNOTATION",
+          "mean_abs_shap": 0.017082824156330396,
+          "feature_mapped": "ANNOTATION"
+        },
+        {
+          "feature": "TYPE",
+          "mean_abs_shap": 0.01614418005979054,
+          "feature_mapped": "TYPE"
+        },
+        {
+          "feature": "Average number of files",
+          "mean_abs_shap": 0.01563612839409809,
+          "feature_mapped": "Average number of files"
+        },
+        {
+          "feature": "Dev Refactoring Commit Experience",
+          "mean_abs_shap": 0.015540815211891277,
+          "feature_mapped": "Dev Refactoring Commit Experience"
+        },
+        {
+          "feature": "METHOD_DECLARATION",
+          "mean_abs_shap": 0.015381802269693597,
+          "feature_mapped": "METHOD_DECLARATION"
+        }
+      ]
+    },
+    "https://github.com/apache/tez.git": {
+      "XGBoost_top_features": [
+        {
+          "feature": "# Previous Refactorings",
+          "mean_abs_shap": 0.3842383027076721,
+          "feature_mapped": "# Previous Refactorings"
+        },
+        {
+          "feature": "refType_Add Parameter",
+          "mean_abs_shap": 0.35891443490982056,
+          "feature_mapped": "refType_Add Parameter"
+        },
+        {
+          "feature": "Dev Refactoring Commit Experience",
+          "mean_abs_shap": 0.31614550948143005,
+          "feature_mapped": "Dev Refactoring Commit Experience"
+        },
+        {
+          "feature": "LOC Right Side",
+          "mean_abs_shap": 0.22889380156993866,
+          "feature_mapped": "LOC Right Side"
+        },
+        {
+          "feature": "SINGLE_VARIABLE_DECLARATION",
+          "mean_abs_shap": 0.22028668224811554,
+          "feature_mapped": "SINGLE_VARIABLE_DECLARATION"
+        },
+        {
+          "feature": "refType_Change Attribute Type",
+          "mean_abs_shap": 0.218948096036911,
+          "feature_mapped": "refType_Change Attribute Type"
+        },
+        {
+          "feature": "VARIABLE_DECLARATION_STATEMENT",
+          "mean_abs_shap": 0.21581339836120605,
+          "feature_mapped": "VARIABLE_DECLARATION_STATEMENT"
+        },
+        {
+          "feature": "FIELD_DECLARATION",
+          "mean_abs_shap": 0.1977904587984085,
+          "feature_mapped": "FIELD_DECLARATION"
+        },
+        {
+          "feature": "LOC Left Side",
+          "mean_abs_shap": 0.19710299372673035,
+          "feature_mapped": "LOC Left Side"
+        },
+        {
+          "feature": "refType_Extract Method",
+          "mean_abs_shap": 0.18355751037597656,
+          "feature_mapped": "refType_Extract Method"
+        }
+      ],
+      "RandomForest_top_features": [
+        {
+          "feature": "refType_Add Parameter",
+          "mean_abs_shap": 0.02650388455868579,
+          "feature_mapped": "refType_Add Parameter"
+        },
+        {
+          "feature": "SINGLE_VARIABLE_DECLARATION",
+          "mean_abs_shap": 0.02294319476408074,
+          "feature_mapped": "SINGLE_VARIABLE_DECLARATION"
+        },
+        {
+          "feature": "# Previous Refactorings",
+          "mean_abs_shap": 0.021724787710370307,
+          "feature_mapped": "# Previous Refactorings"
+        },
+        {
+          "feature": "FIELD_DECLARATION",
+          "mean_abs_shap": 0.020776978749196616,
+          "feature_mapped": "FIELD_DECLARATION"
+        },
+        {
+          "feature": "refType_Change Attribute Type",
+          "mean_abs_shap": 0.019884116096614498,
+          "feature_mapped": "refType_Change Attribute Type"
+        },
+        {
+          "feature": "METHOD_DECLARATION",
+          "mean_abs_shap": 0.01899521001058182,
+          "feature_mapped": "METHOD_DECLARATION"
+        },
+        {
+          "feature": "refactoryCount",
+          "mean_abs_shap": 0.017535629803110415,
+          "feature_mapped": "refactoryCount"
+        },
+        {
+          "feature": "TYPE",
+          "mean_abs_shap": 0.017361588200659646,
+          "feature_mapped": "TYPE"
+        },
+        {
+          "feature": "# of right side locations",
+          "mean_abs_shap": 0.015511764131489423,
+          "feature_mapped": "# of right side locations"
+        },
+        {
+          "feature": "Dev Refactoring Commit Experience",
+          "mean_abs_shap": 0.014091668367582072,
+          "feature_mapped": "Dev Refactoring Commit Experience"
+        }
+      ]
+    },
+    "https://github.com/apache/helix.git": {
+      "XGBoost_top_features": [
+        {
+          "feature": "TYPE",
+          "mean_abs_shap": 0.24085836112499237,
+          "feature_mapped": "TYPE"
+        },
+        {
+          "feature": "ANNOTATION",
+          "mean_abs_shap": 0.20174546539783478,
+          "feature_mapped": "ANNOTATION"
+        },
+        {
+          "feature": "# of Files",
+          "mean_abs_shap": 0.17902764678001404,
+          "feature_mapped": "# of Files"
+        },
+        {
+          "feature": "Age",
+          "mean_abs_shap": 0.16458098590373993,
+          "feature_mapped": "Age"
+        },
+        {
+          "feature": "FIELD_DECLARATION",
+          "mean_abs_shap": 0.15111488103866577,
+          "feature_mapped": "FIELD_DECLARATION"
+        },
+        {
+          "feature": "Average number of files",
+          "mean_abs_shap": 0.12428436428308487,
+          "feature_mapped": "Average number of files"
+        },
+        {
+          "feature": "refType_Change Variable Type",
+          "mean_abs_shap": 0.11424197256565094,
+          "feature_mapped": "refType_Change Variable Type"
+        },
+        {
+          "feature": "refType_Rename Method",
+          "mean_abs_shap": 0.10666228830814362,
+          "feature_mapped": "refType_Rename Method"
+        },
+        {
+          "feature": "Dev Refactoring Experience",
+          "mean_abs_shap": 0.10509989410638809,
+          "feature_mapped": "Dev Refactoring Experience"
+        },
+        {
+          "feature": "refType_Add Parameter",
+          "mean_abs_shap": 0.10129231214523315,
+          "feature_mapped": "refType_Add Parameter"
+        }
+      ],
+      "RandomForest_top_features": [
+        {
+          "feature": "TYPE",
+          "mean_abs_shap": 0.025412906992562517,
+          "feature_mapped": "TYPE"
+        },
+        {
+          "feature": "FIELD_DECLARATION",
+          "mean_abs_shap": 0.02448250189760076,
+          "feature_mapped": "FIELD_DECLARATION"
+        },
+        {
+          "feature": "# of Files",
+          "mean_abs_shap": 0.022203550589463186,
+          "feature_mapped": "# of Files"
+        },
+        {
+          "feature": "ANNOTATION",
+          "mean_abs_shap": 0.019707086125931604,
+          "feature_mapped": "ANNOTATION"
+        },
+        {
+          "feature": "Age",
+          "mean_abs_shap": 0.018617561883747465,
+          "feature_mapped": "Age"
+        },
+        {
+          "feature": "refType_Change Return Type",
+          "mean_abs_shap": 0.015925111188733732,
+          "feature_mapped": "refType_Change Return Type"
+        },
+        {
+          "feature": "Average number of files",
+          "mean_abs_shap": 0.015474126053814688,
+          "feature_mapped": "Average number of files"
+        },
+        {
+          "feature": "refType_Rename Method",
+          "mean_abs_shap": 0.014417447413824858,
+          "feature_mapped": "refType_Rename Method"
+        },
+        {
+          "feature": "LOC Right Side",
+          "mean_abs_shap": 0.013511255232591229,
+          "feature_mapped": "LOC Right Side"
+        },
+        {
+          "feature": "refactoryCount",
+          "mean_abs_shap": 0.013482380034819896,
+          "feature_mapped": "refactoryCount"
+        }
+      ]
+    },
+    "https://github.com/apache/commons-math": {
+      "XGBoost_top_features": [
+        {
+          "feature": "Average number of files",
+          "mean_abs_shap": 0.4594964385032654,
+          "feature_mapped": "Average number of files"
+        },
+        {
+          "feature": "TYPE",
+          "mean_abs_shap": 0.3373270630836487,
+          "feature_mapped": "TYPE"
+        },
+        {
+          "feature": "TYPE_DECLARATION",
+          "mean_abs_shap": 0.2581321597099304,
+          "feature_mapped": "TYPE_DECLARATION"
+        },
+        {
+          "feature": "SINGLE_VARIABLE_DECLARATION",
+          "mean_abs_shap": 0.13845393061637878,
+          "feature_mapped": "SINGLE_VARIABLE_DECLARATION"
+        },
+        {
+          "feature": "Age",
+          "mean_abs_shap": 0.1363099366426468,
+          "feature_mapped": "Age"
+        },
+        {
+          "feature": "Dev Refactoring Experience",
+          "mean_abs_shap": 0.1118154376745224,
+          "feature_mapped": "Dev Refactoring Experience"
+        },
+        {
+          "feature": "LOC Left Side",
+          "mean_abs_shap": 0.08700792491436005,
+          "feature_mapped": "LOC Left Side"
+        },
+        {
+          "feature": "# of Files",
+          "mean_abs_shap": 0.08651118725538254,
+          "feature_mapped": "# of Files"
+        },
+        {
+          "feature": "# Previous Refactorings",
+          "mean_abs_shap": 0.062354009598493576,
+          "feature_mapped": "# Previous Refactorings"
+        },
+        {
+          "feature": "refType_Change Parameter Type",
+          "mean_abs_shap": 0.05381394550204277,
+          "feature_mapped": "refType_Change Parameter Type"
+        }
+      ],
+      "RandomForest_top_features": [
+        {
+          "feature": "Average number of files",
+          "mean_abs_shap": 0.05271412544014573,
+          "feature_mapped": "Average number of files"
+        },
+        {
+          "feature": "TYPE_DECLARATION",
+          "mean_abs_shap": 0.04076434443056595,
+          "feature_mapped": "TYPE_DECLARATION"
+        },
+        {
+          "feature": "TYPE",
+          "mean_abs_shap": 0.03433999368431849,
+          "feature_mapped": "TYPE"
+        },
+        {
+          "feature": "# of Files",
+          "mean_abs_shap": 0.028437473723733175,
+          "feature_mapped": "# of Files"
+        },
+        {
+          "feature": "LOC Left Side",
+          "mean_abs_shap": 0.024264772112647638,
+          "feature_mapped": "LOC Left Side"
+        },
+        {
+          "feature": "refactoryCount",
+          "mean_abs_shap": 0.02091159218964957,
+          "feature_mapped": "refactoryCount"
+        },
+        {
+          "feature": "LOC Right Side",
+          "mean_abs_shap": 0.02021304590421221,
+          "feature_mapped": "LOC Right Side"
+        },
+        {
+          "feature": "SINGLE_VARIABLE_DECLARATION",
+          "mean_abs_shap": 0.018145644476276417,
+          "feature_mapped": "SINGLE_VARIABLE_DECLARATION"
+        },
+        {
+          "feature": "Age",
+          "mean_abs_shap": 0.01618895300098691,
+          "feature_mapped": "Age"
+        },
+        {
+          "feature": "METHOD_DECLARATION",
+          "mean_abs_shap": 0.014196550519436867,
+          "feature_mapped": "METHOD_DECLARATION"
+        }
+      ]
+    },
+    "https://github.com/apache/mahout": {
+      "XGBoost_top_features": [
+        {
+          "feature": "# of Files",
+          "mean_abs_shap": 0.30707302689552307,
+          "feature_mapped": "# of Files"
+        },
+        {
+          "feature": "refType_Change Parameter Type",
+          "mean_abs_shap": 0.24090945720672607,
+          "feature_mapped": "refType_Change Parameter Type"
+        },
+        {
+          "feature": "ANNOTATION",
+          "mean_abs_shap": 0.15395548939704895,
+          "feature_mapped": "ANNOTATION"
+        },
+        {
+          "feature": "Dev Refactoring Experience",
+          "mean_abs_shap": 0.1487540900707245,
+          "feature_mapped": "Dev Refactoring Experience"
+        },
+        {
+          "feature": "Average number of files",
+          "mean_abs_shap": 0.11273665726184845,
+          "feature_mapped": "Average number of files"
+        },
+        {
+          "feature": "refType_Change Attribute Type",
+          "mean_abs_shap": 0.11182615906000137,
+          "feature_mapped": "refType_Change Attribute Type"
+        },
+        {
+          "feature": "refType_Change Variable Type",
+          "mean_abs_shap": 0.10478230565786362,
+          "feature_mapped": "refType_Change Variable Type"
+        },
+        {
+          "feature": "TYPE",
+          "mean_abs_shap": 0.09998850524425507,
+          "feature_mapped": "TYPE"
+        },
+        {
+          "feature": "refType_Add Parameter",
+          "mean_abs_shap": 0.09647101908922195,
+          "feature_mapped": "refType_Add Parameter"
+        },
+        {
+          "feature": "LOC Left Side",
+          "mean_abs_shap": 0.06941019743680954,
+          "feature_mapped": "LOC Left Side"
+        }
+      ],
+      "RandomForest_top_features": [
+        {
+          "feature": "# of Files",
+          "mean_abs_shap": 0.02848583846102289,
+          "feature_mapped": "# of Files"
+        },
+        {
+          "feature": "refType_Change Parameter Type",
+          "mean_abs_shap": 0.023950698110208786,
+          "feature_mapped": "refType_Change Parameter Type"
+        },
+        {
+          "feature": "refType_Change Variable Type",
+          "mean_abs_shap": 0.01909344331008511,
+          "feature_mapped": "refType_Change Variable Type"
+        },
+        {
+          "feature": "ANNOTATION",
+          "mean_abs_shap": 0.017851122198895387,
+          "feature_mapped": "ANNOTATION"
+        },
+        {
+          "feature": "# of Refactorings",
+          "mean_abs_shap": 0.01710806263026976,
+          "feature_mapped": "# of Refactorings"
+        },
+        {
+          "feature": "refactoryCount",
+          "mean_abs_shap": 0.01692575244330536,
+          "feature_mapped": "refactoryCount"
+        },
+        {
+          "feature": "TYPE",
+          "mean_abs_shap": 0.016674737959790575,
+          "feature_mapped": "TYPE"
+        },
+        {
+          "feature": "refType_Change Attribute Type",
+          "mean_abs_shap": 0.016347243117071874,
+          "feature_mapped": "refType_Change Attribute Type"
+        },
+        {
+          "feature": "TYPE_DECLARATION",
+          "mean_abs_shap": 0.015966428376959864,
+          "feature_mapped": "TYPE_DECLARATION"
+        },
+        {
+          "feature": "SINGLE_VARIABLE_DECLARATION",
+          "mean_abs_shap": 0.015788518733319788,
+          "feature_mapped": "SINGLE_VARIABLE_DECLARATION"
+        }
+      ]
+    },
+    "https://github.com/apache/nifi.git": {
+      "XGBoost_top_features": [
+        {
+          "feature": "TYPE_DECLARATION",
+          "mean_abs_shap": 0.5335985422134399,
+          "feature_mapped": "TYPE_DECLARATION"
+        },
+        {
+          "feature": "Dev Refactoring Experience",
+          "mean_abs_shap": 0.20353710651397705,
+          "feature_mapped": "Dev Refactoring Experience"
+        },
+        {
+          "feature": "refType_Change Parameter Type",
+          "mean_abs_shap": 0.19328626990318298,
+          "feature_mapped": "refType_Change Parameter Type"
+        },
+        {
+          "feature": "LOC Right Side",
+          "mean_abs_shap": 0.18096567690372467,
+          "feature_mapped": "LOC Right Side"
+        },
+        {
+          "feature": "refType_Add Parameter",
+          "mean_abs_shap": 0.1593599021434784,
+          "feature_mapped": "refType_Add Parameter"
+        },
+        {
+          "feature": "SINGLE_VARIABLE_DECLARATION",
+          "mean_abs_shap": 0.1418067365884781,
+          "feature_mapped": "SINGLE_VARIABLE_DECLARATION"
+        },
+        {
+          "feature": "LOC Left Side",
+          "mean_abs_shap": 0.13238081336021423,
+          "feature_mapped": "LOC Left Side"
+        },
+        {
+          "feature": "refType_Rename Variable",
+          "mean_abs_shap": 0.12366801500320435,
+          "feature_mapped": "refType_Rename Variable"
+        },
+        {
+          "feature": "RETURN_STATEMENT",
+          "mean_abs_shap": 0.11747026443481445,
+          "feature_mapped": "RETURN_STATEMENT"
+        },
+        {
+          "feature": "# of unique code elements",
+          "mean_abs_shap": 0.10965921729803085,
+          "feature_mapped": "# of unique code elements"
+        }
+      ],
+      "RandomForest_top_features": [
+        {
+          "feature": "TYPE_DECLARATION",
+          "mean_abs_shap": 0.03467297251408084,
+          "feature_mapped": "TYPE_DECLARATION"
+        },
+        {
+          "feature": "refType_Add Parameter",
+          "mean_abs_shap": 0.019703244478471695,
+          "feature_mapped": "refType_Add Parameter"
+        },
+        {
+          "feature": "SINGLE_VARIABLE_DECLARATION",
+          "mean_abs_shap": 0.018993681628336718,
+          "feature_mapped": "SINGLE_VARIABLE_DECLARATION"
+        },
+        {
+          "feature": "refType_Change Parameter Type",
+          "mean_abs_shap": 0.018947825298472203,
+          "feature_mapped": "refType_Change Parameter Type"
+        },
+        {
+          "feature": "LOC Right Side",
+          "mean_abs_shap": 0.018417392148393198,
+          "feature_mapped": "LOC Right Side"
+        },
+        {
+          "feature": "Average number of files",
+          "mean_abs_shap": 0.017195470594856224,
+          "feature_mapped": "Average number of files"
+        },
+        {
+          "feature": "FIELD_DECLARATION",
+          "mean_abs_shap": 0.014277547189343645,
+          "feature_mapped": "FIELD_DECLARATION"
+        },
+        {
+          "feature": "refType_Rename Variable",
+          "mean_abs_shap": 0.013378962904509895,
+          "feature_mapped": "refType_Rename Variable"
+        },
+        {
+          "feature": "Dev Refactoring Experience",
+          "mean_abs_shap": 0.011295269139612114,
+          "feature_mapped": "Dev Refactoring Experience"
+        },
+        {
+          "feature": "METHOD_DECLARATION",
+          "mean_abs_shap": 0.010902604603172047,
+          "feature_mapped": "METHOD_DECLARATION"
+        }
+      ]
+    }
+  },
+  "average_shap_importance": {
+    "XGBoost_top_10": [
+      {
+        "feature": "TYPE_DECLARATION",
+        "mean_abs_shap": 0.22880536895245313
+      },
+      {
+        "feature": "Dev Refactoring Experience",
+        "mean_abs_shap": 0.21745204105973243
+      },
+      {
+        "feature": "# Previous Refactorings",
+        "mean_abs_shap": 0.2021630633622408
+      },
+      {
+        "feature": "# of Files",
+        "mean_abs_shap": 0.19967705849558115
+      },
+      {
+        "feature": "LOC Left Side",
+        "mean_abs_shap": 0.17606114894151687
+      },
+      {
+        "feature": "Average number of files",
+        "mean_abs_shap": 0.14880306497216225
+      },
+      {
+        "feature": "Dev Refactoring Commit Experience",
+        "mean_abs_shap": 0.13619501553475857
+      },
+      {
+        "feature": "SINGLE_VARIABLE_DECLARATION",
+        "mean_abs_shap": 0.13604647442698478
+      },
+      {
+        "feature": "refType_Add Parameter",
+        "mean_abs_shap": 0.13542031422257422
+      },
+      {
+        "feature": "Age",
+        "mean_abs_shap": 0.13463215194642544
+      }
+    ],
+    "RandomForest_top_10": [
+      {
+        "feature": "TYPE_DECLARATION",
+        "mean_abs_shap": 0.020147110790409227
+      },
+      {
+        "feature": "# of Files",
+        "mean_abs_shap": 0.018962484422238867
+      },
+      {
+        "feature": "Average number of files",
+        "mean_abs_shap": 0.01868276120874502
+      },
+      {
+        "feature": "SINGLE_VARIABLE_DECLARATION",
+        "mean_abs_shap": 0.01762837438073058
+      },
+      {
+        "feature": "TYPE",
+        "mean_abs_shap": 0.016568457046164456
+      },
+      {
+        "feature": "METHOD_DECLARATION",
+        "mean_abs_shap": 0.015343481142044322
+      },
+      {
+        "feature": "LOC Right Side",
+        "mean_abs_shap": 0.01512680335828145
+      },
+      {
+        "feature": "FIELD_DECLARATION",
+        "mean_abs_shap": 0.014675042059185059
+      },
+      {
+        "feature": "LOC Left Side",
+        "mean_abs_shap": 0.014234231529114391
+      },
+      {
+        "feature": "refactoryCount",
+        "mean_abs_shap": 0.014056248336786013
+      }
+    ]
+  }
+}

@@ -1,0 +1,157 @@
+
+Starting RQ1 Replication Analysis...
+====================================
+
+Step 1: Loading data from CSV files...
+  - Loaded 53829 commits with refactorings
+  - Loaded 74 repositories
+
+Step 2: Classifying commits...
+  - Classified 53829 commit-repository pairs
+
+Step 3: Analyzing commit distribution...
+Summary Statistics for Commit Classification:
+=============================================
+
+co-occur:
+  Mean: 17.96%
+  Median: 17.06%
+  Min: 0.00%
+  Max: 43.71%
+
+production-only:
+  Mean: 73.72%
+  Median: 72.99%
+  Min: 29.73%
+  Max: 100.00%
+
+test-only:
+  Mean: 8.32%
+  Median: 6.64%
+  Min: 0.00%
+  Max: 40.54%
+
+Step 4: Analyzing test refactoring types in co-occurring commits...
+
+
+Top Test Refactoring Types in Co-occurring Commits:
+===================================================
+# A tibble: 10 × 2
+   type                      count
+   <chr>                     <int>
+ 1 Change Variable Type      29810
+ 2 Add Method Annotation     10771
+ 3 Move Class                 7787
+ 4 Add Variable Modifier      6548
+ 5 Rename Variable            5226
+ 6 Rename Method              4704
+ 7 Extract Method             3177
+ 8 Change Parameter Type      2685
+ 9 Add Thrown Exception Type  2363
+10 Extract And Move Method    2358
+
+
+Analysis completed successfully!
+Generated files:
+  - PercentageOfCommitsType.pdf (Figure 1 equivalent)
+  - CoOccurringTestTypesTop10.pdf (Figure 2 equivalent)
+
+
+Final Summary:
+=============
+Overall percentages across all repositories:
+  Source-only: 73.7% (mean), 73.0% (median)
+  Test-only: 8.3% (mean), 6.6% (median)
+  Co-occurring: 18.0% (mean), 17.1% (median)
+
+Top 10 Test Refactoring Types in Co-occurring Commits:
+# A tibble: 10 × 2
+   type                      count
+   <chr>                     <int>
+ 1 Change Variable Type      29810
+ 2 Add Method Annotation     10771
+ 3 Move Class                 7787
+ 4 Add Variable Modifier      6548
+ 5 Rename Variable            5226
+ 6 Rename Method              4704
+ 7 Extract Method             3177
+ 8 Change Parameter Type      2685
+ 9 Add Thrown Exception Type  2363
+10 Extract And Move Method    2358
+
+
+## RQ2
+
+各项目详细性能：
+项目	AUC	F1-Score	Accuracy	Recall	Precision
+kafka	0.7801	0.7590	0.7843	0.7387	0.7854
+archiva	0.7458	0.6667	0.7800	0.6376	0.7026
+activemq	0.6660	0.4817	0.8379	0.3805	0.6731
+kylin	0.6774	0.4895	0.8282	0.4250	0.6016
+phoenix	0.9222	0.9012	0.9825	0.8475	0.9653
+tez	0.7695	0.6859	0.8003	0.6818	0.6951
+helix	0.7092	0.5952	0.7606	0.5509	0.6643
+commons-math	0.7691	0.6843	0.8073	0.6705	0.7052
+mahout	0.7243	0.6438	0.7516	0.6225	0.6819
+nifi	0.6833	0.5294	0.7666	0.4930	0.5864
+
+平均性能（与原文对比）：
+指标(平均)	你的结果	原文结果	差异
+AUC	0.7447	0.74-0.75	✅ 基本一致
+F1-Score	0.6437	0.65-0.66	✅ 接近
+Accuracy	0.8099	-	-
+Recall	0.6048	0.63	⚠️ 稍低
+Precision	0.7061	0.70	✅ 基本一致
+
+
+模型性能总结：
+AUC范围: 0.6660 - 0.9222
+
+最佳性能项目: Phoenix (AUC: 0.9222, F1: 0.9012)
+
+最差性能项目: ActiveMQ (AUC: 0.6660, F1: 0.4817)
+
+平均性能: AUC = 0.7447, F1 = 0.6437
+
+与原文对比：
+此结果验证了原文的主要发现：
+
+✅ 共现重构预测是可行的（AUC > 0.7）
+
+✅ 不同项目间性能差异很大
+
+✅ Phoenix项目表现异常出色（AUC > 0.9）
+
+重要性：
+Top 10 features:
+leftLocationDiff: 0.04460741332996465
+rightLocationDiff: 0.04243932537046584
+dev_ref_exp: 0.04020602090427597
+num_touched_before: 0.03863974533611647
+dev_ref_com_exp: 0.0370629615925497
+METHOD_DECLARATION: 0.0332897721691512
+fileTouchCount: 0.030592800633110945
+age: 0.030066915567812585
+refactoryCount: 0.029892593095485302
+TYPE_DECLARATION: 0.029819374385364045
+
+# Expansion:
+
+## XGBoost算法
+
+
+## SHAP分析特征重要性
+
+正确映射特征名称：feature_name_mapping函数将技术特征名称映射到原文使用的业务名称
+
+GridSearch优化参数：对Random Forest和XGBoost都使用了GridSearch来优化超参数
+
+与原文一致的数据处理：
+
+相同的10-fold交叉验证
+
+相同的SMOTE处理
+
+相同的特征选择阈值(-0.001)
+
+相同的项目选择标准

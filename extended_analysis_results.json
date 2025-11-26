@@ -1,0 +1,1102 @@
+{
+  "random_forest": {
+    "https://github.com/apache/kafka.git": {
+      "auc": 0.7731332250405114,
+      "f1": 0.7431384369979783,
+      "accuracy": 0.7755550380375718,
+      "recall": 0.720640955763384,
+      "precision": 0.7726577652039837
+    },
+    "https://github.com/apache/archiva.git": {
+      "auc": 0.7375291371530777,
+      "f1": 0.6506716540634203,
+      "accuracy": 0.7738068900126422,
+      "recall": 0.6268806125995506,
+      "precision": 0.6824100402988025
+    },
+    "https://github.com/apache/activemq.git": {
+      "auc": 0.6545644462782414,
+      "f1": 0.456195380516496,
+      "accuracy": 0.8274573492805537,
+      "recall": 0.36574923308157603,
+      "precision": 0.6161495762579354
+    },
+    "https://github.com/apache/kylin.git": {
+      "auc": 0.6814727633637783,
+      "f1": 0.5003812711268583,
+      "accuracy": 0.8261799771353912,
+      "recall": 0.4420035231843482,
+      "precision": 0.5863064974689689
+    },
+    "https://github.com/apache/phoenix.git": {
+      "auc": 0.928467427195779,
+      "f1": 0.9083928787206654,
+      "accuracy": 0.9830985501567397,
+      "recall": 0.8604029527590908,
+      "precision": 0.9643564545288683
+    },
+    "https://github.com/apache/tez.git": {
+      "auc": 0.7541341188262446,
+      "f1": 0.661898809775439,
+      "accuracy": 0.7835610302351623,
+      "recall": 0.6658949463439833,
+      "precision": 0.6701528229308116
+    },
+    "https://github.com/apache/helix.git": {
+      "auc": 0.7022875997886355,
+      "f1": 0.5931260962449179,
+      "accuracy": 0.7562470138557095,
+      "recall": 0.5418981132368229,
+      "precision": 0.6608460197210198
+    },
+    "https://github.com/apache/commons-math": {
+      "auc": 0.7650307848678906,
+      "f1": 0.6731728125109375,
+      "accuracy": 0.8020833333333334,
+      "recall": 0.6589409976788163,
+      "precision": 0.6964761308861698
+    },
+    "https://github.com/apache/mahout": {
+      "auc": 0.7248493107344237,
+      "f1": 0.6468866208771162,
+      "accuracy": 0.7555444555444556,
+      "recall": 0.6114993212764892,
+      "precision": 0.6903662002500774
+    },
+    "https://github.com/apache/nifi.git": {
+      "auc": 0.6902200502360456,
+      "f1": 0.546076873625366,
+      "accuracy": 0.7685164835164835,
+      "recall": 0.5165771168435239,
+      "precision": 0.5916765529674632
+    }
+  },
+  "xgboost": {
+    "https://github.com/apache/kafka.git": {
+      "auc": 0.7733824392101809,
+      "f1": 0.7418864298355021,
+      "accuracy": 0.7728924080111784,
+      "recall": 0.7225624431912464,
+      "precision": 0.7721351333570179
+    },
+    "https://github.com/apache/archiva.git": {
+      "auc": 0.7281315099098975,
+      "f1": 0.6357481060769562,
+      "accuracy": 0.7684497471554994,
+      "recall": 0.6027937324667566,
+      "precision": 0.6788225999402471
+    },
+    "https://github.com/apache/activemq.git": {
+      "auc": 0.6038020416039419,
+      "f1": 0.3498999207113481,
+      "accuracy": 0.8037641916094955,
+      "recall": 0.26938802602321277,
+      "precision": 0.5216940464076687
+    },
+    "https://github.com/apache/kylin.git": {
+      "auc": 0.662853353075622,
+      "f1": 0.46890802153979794,
+      "accuracy": 0.8313285970929283,
+      "recall": 0.38393747661678035,
+      "precision": 0.6324675324675325
+    },
+    "https://github.com/apache/phoenix.git": {
+      "auc": 0.8936616260905554,
+      "f1": 0.8490354247744071,
+      "accuracy": 0.9734032131661442,
+      "recall": 0.7949281701887201,
+      "precision": 0.918541179337232
+    },
+    "https://github.com/apache/tez.git": {
+      "auc": 0.7429131198117506,
+      "f1": 0.6476537404184842,
+      "accuracy": 0.7813549832026876,
+      "recall": 0.6265335626277608,
+      "precision": 0.6839526709527193
+    },
+    "https://github.com/apache/helix.git": {
+      "auc": 0.6760725277902329,
+      "f1": 0.5521638789268527,
+      "accuracy": 0.7388795986622073,
+      "recall": 0.4960258839129807,
+      "precision": 0.6283734378144541
+    },
+    "https://github.com/apache/commons-math": {
+      "auc": 0.7683764058621916,
+      "f1": 0.6764260980027866,
+      "accuracy": 0.803125,
+      "recall": 0.6669930362199853,
+      "precision": 0.697742636746143
+    },
+    "https://github.com/apache/mahout": {
+      "auc": 0.7095415034241136,
+      "f1": 0.626854291161454,
+      "accuracy": 0.7413253413253413,
+      "recall": 0.5916744344465967,
+      "precision": 0.6686920231539797
+    },
+    "https://github.com/apache/nifi.git": {
+      "auc": 0.6670623744049469,
+      "f1": 0.5060121656570796,
+      "accuracy": 0.7627655677655678,
+      "recall": 0.4535774935113088,
+      "precision": 0.5918346811352599
+    }
+  },
+  "summary": {
+    "rf_mean_auc": 0.7411688863484628,
+    "xgb_mean_auc": 0.7225796901183433,
+    "improvement": -0.018589196230119454,
+    "t_statistic": 3.628098146550231,
+    "p_value": 0.005501894372915224,
+    "significant": true
+  },
+  "shap_analysis": {
+    "https://github.com/apache/kafka.git": {
+      "XGBoost_top_features": [
+        {
+          "feature": "num_touched_before",
+          "mean_abs_shap": 0.2961902320384979
+        },
+        {
+          "feature": "refactoryTypeCount",
+          "mean_abs_shap": 0.2869448661804199
+        },
+        {
+          "feature": "METHOD_DECLARATION",
+          "mean_abs_shap": 0.27884358167648315
+        },
+        {
+          "feature": "dev_ref_exp",
+          "mean_abs_shap": 0.22239872813224792
+        },
+        {
+          "feature": "leftLocationDiff",
+          "mean_abs_shap": 0.20300091803073883
+        },
+        {
+          "feature": "SINGLE_VARIABLE_DECLARATION",
+          "mean_abs_shap": 0.1920892745256424
+        },
+        {
+          "feature": "rightLocationDiff",
+          "mean_abs_shap": 0.19163258373737335
+        },
+        {
+          "feature": "age",
+          "mean_abs_shap": 0.13965237140655518
+        },
+        {
+          "feature": "dev_ref_com_exp",
+          "mean_abs_shap": 0.1323615312576294
+        },
+        {
+          "feature": "refType_Change Class Access Modifier",
+          "mean_abs_shap": 0.10860088467597961
+        }
+      ],
+      "RandomForest_top_features": [
+        {
+          "feature": "METHOD_DECLARATION",
+          "mean_abs_shap": 0.030659146296984432
+        },
+        {
+          "feature": "num_touched_before",
+          "mean_abs_shap": 0.025283482306807964
+        },
+        {
+          "feature": "refactoryTypeCount",
+          "mean_abs_shap": 0.024092340140841616
+        },
+        {
+          "feature": "rightLocationDiff",
+          "mean_abs_shap": 0.021578550468283348
+        },
+        {
+          "feature": "leftLocationDiff",
+          "mean_abs_shap": 0.02123722214030799
+        },
+        {
+          "feature": "SINGLE_VARIABLE_DECLARATION",
+          "mean_abs_shap": 0.019630878215232184
+        },
+        {
+          "feature": "leftLocationCount",
+          "mean_abs_shap": 0.018263143628457087
+        },
+        {
+          "feature": "refactoryCount",
+          "mean_abs_shap": 0.015532440033975366
+        },
+        {
+          "feature": "refType_Add Parameter",
+          "mean_abs_shap": 0.013757273279663747
+        },
+        {
+          "feature": "fileTouchCount",
+          "mean_abs_shap": 0.013451788251080331
+        }
+      ]
+    },
+    "https://github.com/apache/archiva.git": {
+      "XGBoost_top_features": [
+        {
+          "feature": "fileTouchCount",
+          "mean_abs_shap": 0.6085177659988403
+        },
+        {
+          "feature": "SINGLE_VARIABLE_DECLARATION",
+          "mean_abs_shap": 0.44137275218963623
+        },
+        {
+          "feature": "dev_ref_com_exp",
+          "mean_abs_shap": 0.23188388347625732
+        },
+        {
+          "feature": "dev_ref_exp",
+          "mean_abs_shap": 0.22207704186439514
+        },
+        {
+          "feature": "leftLocationDiff",
+          "mean_abs_shap": 0.2179679572582245
+        },
+        {
+          "feature": "refType_Add Parameter",
+          "mean_abs_shap": 0.2043256312608719
+        },
+        {
+          "feature": "rightLocationDiff",
+          "mean_abs_shap": 0.16836190223693848
+        },
+        {
+          "feature": "VARIABLE_DECLARATION_STATEMENT",
+          "mean_abs_shap": 0.14979520440101624
+        },
+        {
+          "feature": "refactoryTypeCount",
+          "mean_abs_shap": 0.1483675092458725
+        },
+        {
+          "feature": "age",
+          "mean_abs_shap": 0.12148632109165192
+        }
+      ],
+      "RandomForest_top_features": [
+        {
+          "feature": "SINGLE_VARIABLE_DECLARATION",
+          "mean_abs_shap": 0.04757079324459479
+        },
+        {
+          "feature": "fileTouchCount",
+          "mean_abs_shap": 0.043231624779701563
+        },
+        {
+          "feature": "METHOD_DECLARATION",
+          "mean_abs_shap": 0.02580205554052553
+        },
+        {
+          "feature": "leftLocationDiff",
+          "mean_abs_shap": 0.024818483865939964
+        },
+        {
+          "feature": "rightLocationDiff",
+          "mean_abs_shap": 0.02228904098056909
+        },
+        {
+          "feature": "refType_Add Parameter",
+          "mean_abs_shap": 0.02102012984802966
+        },
+        {
+          "feature": "refactoryCount",
+          "mean_abs_shap": 0.01920394336788079
+        },
+        {
+          "feature": "refType_Change Parameter Type",
+          "mean_abs_shap": 0.014367722484661002
+        },
+        {
+          "feature": "TYPE",
+          "mean_abs_shap": 0.014215949714654612
+        },
+        {
+          "feature": "VARIABLE_DECLARATION_STATEMENT",
+          "mean_abs_shap": 0.01192719132733374
+        }
+      ]
+    },
+    "https://github.com/apache/activemq.git": {
+      "XGBoost_top_features": [
+        {
+          "feature": "ANNOTATION",
+          "mean_abs_shap": 0.3804433345794678
+        },
+        {
+          "feature": "dev_ref_exp",
+          "mean_abs_shap": 0.28421321511268616
+        },
+        {
+          "feature": "refactoryTypeCount",
+          "mean_abs_shap": 0.22051702439785004
+        },
+        {
+          "feature": "dev_ref_com_exp",
+          "mean_abs_shap": 0.1731133759021759
+        },
+        {
+          "feature": "refType_Add Parameter",
+          "mean_abs_shap": 0.17308050394058228
+        },
+        {
+          "feature": "RETURN_STATEMENT",
+          "mean_abs_shap": 0.15302787721157074
+        },
+        {
+          "feature": "SINGLE_VARIABLE_DECLARATION",
+          "mean_abs_shap": 0.1519680619239807
+        },
+        {
+          "feature": "age",
+          "mean_abs_shap": 0.14712561666965485
+        },
+        {
+          "feature": "refType_Change Attribute Type",
+          "mean_abs_shap": 0.14010459184646606
+        },
+        {
+          "feature": "VARIABLE_DECLARATION_STATEMENT",
+          "mean_abs_shap": 0.138473242521286
+        }
+      ],
+      "RandomForest_top_features": [
+        {
+          "feature": "ANNOTATION",
+          "mean_abs_shap": 0.04269651609390026
+        },
+        {
+          "feature": "SINGLE_VARIABLE_DECLARATION",
+          "mean_abs_shap": 0.025263469116678226
+        },
+        {
+          "feature": "refType_Add Method Annotation",
+          "mean_abs_shap": 0.024070891144410446
+        },
+        {
+          "feature": "refType_Add Parameter",
+          "mean_abs_shap": 0.018869660899176566
+        },
+        {
+          "feature": "refType_Extract Method",
+          "mean_abs_shap": 0.016266597961059046
+        },
+        {
+          "feature": "METHOD_INVOCATION",
+          "mean_abs_shap": 0.015018848105166077
+        },
+        {
+          "feature": "refType_Change Attribute Access Modifier",
+          "mean_abs_shap": 0.01483835200175903
+        },
+        {
+          "feature": "METHOD_DECLARATION",
+          "mean_abs_shap": 0.014136752949701039
+        },
+        {
+          "feature": "refactoryTypeCount",
+          "mean_abs_shap": 0.013392128566410158
+        },
+        {
+          "feature": "RETURN_STATEMENT",
+          "mean_abs_shap": 0.012897140345033382
+        }
+      ]
+    },
+    "https://github.com/apache/kylin.git": {
+      "XGBoost_top_features": [
+        {
+          "feature": "TYPE_DECLARATION",
+          "mean_abs_shap": 0.41792336106300354
+        },
+        {
+          "feature": "refType_Change Parameter Type",
+          "mean_abs_shap": 0.32073289155960083
+        },
+        {
+          "feature": "dev_ref_com_exp",
+          "mean_abs_shap": 0.2972145676612854
+        },
+        {
+          "feature": "num_touched_before",
+          "mean_abs_shap": 0.29409798979759216
+        },
+        {
+          "feature": "refType_Change Variable Type",
+          "mean_abs_shap": 0.28592053055763245
+        },
+        {
+          "feature": "fileTouchAverage",
+          "mean_abs_shap": 0.2541675269603729
+        },
+        {
+          "feature": "refType_Change Method Access Modifier",
+          "mean_abs_shap": 0.2376500964164734
+        },
+        {
+          "feature": "TYPE",
+          "mean_abs_shap": 0.2216838151216507
+        },
+        {
+          "feature": "age",
+          "mean_abs_shap": 0.20619486272335052
+        },
+        {
+          "feature": "codeElementCount",
+          "mean_abs_shap": 0.20249101519584656
+        }
+      ],
+      "RandomForest_top_features": [
+        {
+          "feature": "fileTouchAverage",
+          "mean_abs_shap": 0.04919396960631755
+        },
+        {
+          "feature": "TYPE_DECLARATION",
+          "mean_abs_shap": 0.04067096546146922
+        },
+        {
+          "feature": "refType_Change Parameter Type",
+          "mean_abs_shap": 0.03311701702642208
+        },
+        {
+          "feature": "TYPE",
+          "mean_abs_shap": 0.02791810919418747
+        },
+        {
+          "feature": "refType_Change Method Access Modifier",
+          "mean_abs_shap": 0.020528162441936417
+        },
+        {
+          "feature": "refType_Change Variable Type",
+          "mean_abs_shap": 0.020242641696448065
+        },
+        {
+          "feature": "ANNOTATION",
+          "mean_abs_shap": 0.018855200367540605
+        },
+        {
+          "feature": "refType_Rename Parameter",
+          "mean_abs_shap": 0.0160661352164861
+        },
+        {
+          "feature": "FIELD_DECLARATION",
+          "mean_abs_shap": 0.015799471577501976
+        },
+        {
+          "feature": "refType_Rename Class",
+          "mean_abs_shap": 0.013306232153341901
+        }
+      ]
+    },
+    "https://github.com/apache/phoenix.git": {
+      "XGBoost_top_features": [
+        {
+          "feature": "TYPE_DECLARATION",
+          "mean_abs_shap": 0.6020313501358032
+        },
+        {
+          "feature": "num_touched_before",
+          "mean_abs_shap": 0.4828028678894043
+        },
+        {
+          "feature": "dev_ref_exp",
+          "mean_abs_shap": 0.36398985981941223
+        },
+        {
+          "feature": "fileTouchCount",
+          "mean_abs_shap": 0.3572094142436981
+        },
+        {
+          "feature": "METHOD_DECLARATION",
+          "mean_abs_shap": 0.30238908529281616
+        },
+        {
+          "feature": "refactoryTypeCount",
+          "mean_abs_shap": 0.24893689155578613
+        },
+        {
+          "feature": "leftLocationDiff",
+          "mean_abs_shap": 0.21265777945518494
+        },
+        {
+          "feature": "refType_Add Parameter",
+          "mean_abs_shap": 0.20408673584461212
+        },
+        {
+          "feature": "age",
+          "mean_abs_shap": 0.20354783535003662
+        },
+        {
+          "feature": "ANNOTATION",
+          "mean_abs_shap": 0.15945284068584442
+        }
+      ],
+      "RandomForest_top_features": [
+        {
+          "feature": "TYPE_DECLARATION",
+          "mean_abs_shap": 0.04148646308249554
+        },
+        {
+          "feature": "num_touched_before",
+          "mean_abs_shap": 0.03032797978757584
+        },
+        {
+          "feature": "fileTouchCount",
+          "mean_abs_shap": 0.02639464693842426
+        },
+        {
+          "feature": "dev_ref_exp",
+          "mean_abs_shap": 0.023250187055415775
+        },
+        {
+          "feature": "fileTouchAverage",
+          "mean_abs_shap": 0.021283234134959916
+        },
+        {
+          "feature": "FIELD_DECLARATION",
+          "mean_abs_shap": 0.019511301278545123
+        },
+        {
+          "feature": "dev_ref_com_exp",
+          "mean_abs_shap": 0.01780251465160487
+        },
+        {
+          "feature": "METHOD_DECLARATION",
+          "mean_abs_shap": 0.01767552843256114
+        },
+        {
+          "feature": "TYPE",
+          "mean_abs_shap": 0.017052793099714227
+        },
+        {
+          "feature": "ANNOTATION",
+          "mean_abs_shap": 0.01676377296752551
+        }
+      ]
+    },
+    "https://github.com/apache/tez.git": {
+      "XGBoost_top_features": [
+        {
+          "feature": "num_touched_before",
+          "mean_abs_shap": 0.34682396054267883
+        },
+        {
+          "feature": "dev_ref_com_exp",
+          "mean_abs_shap": 0.336439311504364
+        },
+        {
+          "feature": "refType_Add Parameter",
+          "mean_abs_shap": 0.3278520703315735
+        },
+        {
+          "feature": "refType_Change Attribute Type",
+          "mean_abs_shap": 0.24368032813072205
+        },
+        {
+          "feature": "VARIABLE_DECLARATION_STATEMENT",
+          "mean_abs_shap": 0.2013860046863556
+        },
+        {
+          "feature": "leftLocationDiff",
+          "mean_abs_shap": 0.19707079231739044
+        },
+        {
+          "feature": "rightLocationDiff",
+          "mean_abs_shap": 0.19028563797473907
+        },
+        {
+          "feature": "refType_Rename Method",
+          "mean_abs_shap": 0.18173988163471222
+        },
+        {
+          "feature": "FIELD_DECLARATION",
+          "mean_abs_shap": 0.17387032508850098
+        },
+        {
+          "feature": "codeElementCount",
+          "mean_abs_shap": 0.15691839158535004
+        }
+      ],
+      "RandomForest_top_features": [
+        {
+          "feature": "refType_Change Attribute Type",
+          "mean_abs_shap": 0.03058393948766735
+        },
+        {
+          "feature": "refType_Add Parameter",
+          "mean_abs_shap": 0.027134108634488216
+        },
+        {
+          "feature": "TYPE",
+          "mean_abs_shap": 0.025408331158199994
+        },
+        {
+          "feature": "num_touched_before",
+          "mean_abs_shap": 0.020957189122536357
+        },
+        {
+          "feature": "SINGLE_VARIABLE_DECLARATION",
+          "mean_abs_shap": 0.020206754295516043
+        },
+        {
+          "feature": "METHOD_DECLARATION",
+          "mean_abs_shap": 0.01932243650659013
+        },
+        {
+          "feature": "dev_ref_com_exp",
+          "mean_abs_shap": 0.018466386001693837
+        },
+        {
+          "feature": "dev_ref_exp",
+          "mean_abs_shap": 0.015949305523228492
+        },
+        {
+          "feature": "FIELD_DECLARATION",
+          "mean_abs_shap": 0.015896255547473936
+        },
+        {
+          "feature": "VARIABLE_DECLARATION_STATEMENT",
+          "mean_abs_shap": 0.015194316612590297
+        }
+      ]
+    },
+    "https://github.com/apache/helix.git": {
+      "XGBoost_top_features": [
+        {
+          "feature": "TYPE",
+          "mean_abs_shap": 0.38374999165534973
+        },
+        {
+          "feature": "fileTouchCount",
+          "mean_abs_shap": 0.3096694350242615
+        },
+        {
+          "feature": "ANNOTATION",
+          "mean_abs_shap": 0.2385280430316925
+        },
+        {
+          "feature": "codeElementCount",
+          "mean_abs_shap": 0.2239087074995041
+        },
+        {
+          "feature": "age",
+          "mean_abs_shap": 0.21163234114646912
+        },
+        {
+          "feature": "FIELD_DECLARATION",
+          "mean_abs_shap": 0.1969931572675705
+        },
+        {
+          "feature": "leftLocationDiff",
+          "mean_abs_shap": 0.17311587929725647
+        },
+        {
+          "feature": "refType_Add Parameter",
+          "mean_abs_shap": 0.17148743569850922
+        },
+        {
+          "feature": "dev_ref_exp",
+          "mean_abs_shap": 0.17129512131214142
+        },
+        {
+          "feature": "refType_Rename Variable",
+          "mean_abs_shap": 0.16652151942253113
+        }
+      ],
+      "RandomForest_top_features": [
+        {
+          "feature": "fileTouchCount",
+          "mean_abs_shap": 0.029769034073348608
+        },
+        {
+          "feature": "TYPE",
+          "mean_abs_shap": 0.028607268639715588
+        },
+        {
+          "feature": "FIELD_DECLARATION",
+          "mean_abs_shap": 0.026148236008411107
+        },
+        {
+          "feature": "ANNOTATION",
+          "mean_abs_shap": 0.019841096586240108
+        },
+        {
+          "feature": "refType_Change Return Type",
+          "mean_abs_shap": 0.018772028841002077
+        },
+        {
+          "feature": "rightLocationDiff",
+          "mean_abs_shap": 0.017279067254204354
+        },
+        {
+          "feature": "refactoryCount",
+          "mean_abs_shap": 0.01698908588516136
+        },
+        {
+          "feature": "fileTouchAverage",
+          "mean_abs_shap": 0.015400430825387666
+        },
+        {
+          "feature": "age",
+          "mean_abs_shap": 0.014771494629637527
+        },
+        {
+          "feature": "METHOD_DECLARATION",
+          "mean_abs_shap": 0.01433995875238374
+        }
+      ]
+    },
+    "https://github.com/apache/commons-math": {
+      "XGBoost_top_features": [
+        {
+          "feature": "fileTouchAverage",
+          "mean_abs_shap": 0.6147721409797668
+        },
+        {
+          "feature": "TYPE",
+          "mean_abs_shap": 0.47791656851768494
+        },
+        {
+          "feature": "TYPE_DECLARATION",
+          "mean_abs_shap": 0.4080292284488678
+        },
+        {
+          "feature": "SINGLE_VARIABLE_DECLARATION",
+          "mean_abs_shap": 0.2895645797252655
+        },
+        {
+          "feature": "codeElementCount",
+          "mean_abs_shap": 0.26184090971946716
+        },
+        {
+          "feature": "dev_ref_exp",
+          "mean_abs_shap": 0.2542787194252014
+        },
+        {
+          "feature": "age",
+          "mean_abs_shap": 0.24086785316467285
+        },
+        {
+          "feature": "leftLocationDiff",
+          "mean_abs_shap": 0.20841051638126373
+        },
+        {
+          "feature": "dev_ref_com_exp",
+          "mean_abs_shap": 0.18764586746692657
+        },
+        {
+          "feature": "fileTouchCount",
+          "mean_abs_shap": 0.15828073024749756
+        }
+      ],
+      "RandomForest_top_features": [
+        {
+          "feature": "fileTouchAverage",
+          "mean_abs_shap": 0.055264882404323555
+        },
+        {
+          "feature": "TYPE_DECLARATION",
+          "mean_abs_shap": 0.04759859577524737
+        },
+        {
+          "feature": "TYPE",
+          "mean_abs_shap": 0.03338159386495424
+        },
+        {
+          "feature": "fileTouchCount",
+          "mean_abs_shap": 0.03197782397834311
+        },
+        {
+          "feature": "leftLocationDiff",
+          "mean_abs_shap": 0.026837318745589533
+        },
+        {
+          "feature": "SINGLE_VARIABLE_DECLARATION",
+          "mean_abs_shap": 0.022459748312702612
+        },
+        {
+          "feature": "age",
+          "mean_abs_shap": 0.021029999218046876
+        },
+        {
+          "feature": "rightLocationDiff",
+          "mean_abs_shap": 0.01917033529167012
+        },
+        {
+          "feature": "refactoryCount",
+          "mean_abs_shap": 0.016117256636489736
+        },
+        {
+          "feature": "leftLocationCount",
+          "mean_abs_shap": 0.0156896660595926
+        }
+      ]
+    },
+    "https://github.com/apache/mahout": {
+      "XGBoost_top_features": [
+        {
+          "feature": "fileTouchCount",
+          "mean_abs_shap": 0.41579240560531616
+        },
+        {
+          "feature": "dev_ref_exp",
+          "mean_abs_shap": 0.4074704945087433
+        },
+        {
+          "feature": "refType_Change Parameter Type",
+          "mean_abs_shap": 0.38128793239593506
+        },
+        {
+          "feature": "refType_Change Variable Type",
+          "mean_abs_shap": 0.322747141122818
+        },
+        {
+          "feature": "ANNOTATION",
+          "mean_abs_shap": 0.25821545720100403
+        },
+        {
+          "feature": "refType_Add Parameter",
+          "mean_abs_shap": 0.20052792131900787
+        },
+        {
+          "feature": "refType_Change Method Access Modifier",
+          "mean_abs_shap": 0.18945138156414032
+        },
+        {
+          "feature": "fileTouchAverage",
+          "mean_abs_shap": 0.18485134840011597
+        },
+        {
+          "feature": "TYPE",
+          "mean_abs_shap": 0.18381176888942719
+        },
+        {
+          "feature": "dev_ref_com_exp",
+          "mean_abs_shap": 0.16929583251476288
+        }
+      ],
+      "RandomForest_top_features": [
+        {
+          "feature": "fileTouchCount",
+          "mean_abs_shap": 0.02857363072115228
+        },
+        {
+          "feature": "refType_Change Variable Type",
+          "mean_abs_shap": 0.028407535885829917
+        },
+        {
+          "feature": "refType_Change Parameter Type",
+          "mean_abs_shap": 0.023377262234736733
+        },
+        {
+          "feature": "refactoryCount",
+          "mean_abs_shap": 0.020578928910149126
+        },
+        {
+          "feature": "fileTouchAverage",
+          "mean_abs_shap": 0.019820075382890472
+        },
+        {
+          "feature": "TYPE_DECLARATION",
+          "mean_abs_shap": 0.019354573187579507
+        },
+        {
+          "feature": "FIELD_DECLARATION",
+          "mean_abs_shap": 0.01907794961741794
+        },
+        {
+          "feature": "ANNOTATION",
+          "mean_abs_shap": 0.018792906995478965
+        },
+        {
+          "feature": "refactoryTypeCount",
+          "mean_abs_shap": 0.01818003086195885
+        },
+        {
+          "feature": "SINGLE_VARIABLE_DECLARATION",
+          "mean_abs_shap": 0.01799898743931449
+        }
+      ]
+    },
+    "https://github.com/apache/nifi.git": {
+      "XGBoost_top_features": [
+        {
+          "feature": "TYPE_DECLARATION",
+          "mean_abs_shap": 0.49796390533447266
+        },
+        {
+          "feature": "refType_Change Parameter Type",
+          "mean_abs_shap": 0.3068785071372986
+        },
+        {
+          "feature": "dev_ref_exp",
+          "mean_abs_shap": 0.292542964220047
+        },
+        {
+          "feature": "SINGLE_VARIABLE_DECLARATION",
+          "mean_abs_shap": 0.266084760427475
+        },
+        {
+          "feature": "rightLocationDiff",
+          "mean_abs_shap": 0.24888327717781067
+        },
+        {
+          "feature": "leftLocationDiff",
+          "mean_abs_shap": 0.18282192945480347
+        },
+        {
+          "feature": "codeElementCount",
+          "mean_abs_shap": 0.17335057258605957
+        },
+        {
+          "feature": "FIELD_DECLARATION",
+          "mean_abs_shap": 0.14119209349155426
+        },
+        {
+          "feature": "RETURN_STATEMENT",
+          "mean_abs_shap": 0.13179105520248413
+        },
+        {
+          "feature": "refactoryTypeCount",
+          "mean_abs_shap": 0.12118877470493317
+        }
+      ],
+      "RandomForest_top_features": [
+        {
+          "feature": "TYPE_DECLARATION",
+          "mean_abs_shap": 0.04140057116743459
+        },
+        {
+          "feature": "SINGLE_VARIABLE_DECLARATION",
+          "mean_abs_shap": 0.031441553660433406
+        },
+        {
+          "feature": "refType_Change Parameter Type",
+          "mean_abs_shap": 0.025938629442358446
+        },
+        {
+          "feature": "rightLocationDiff",
+          "mean_abs_shap": 0.02413287435643766
+        },
+        {
+          "feature": "fileTouchAverage",
+          "mean_abs_shap": 0.021270143764048535
+        },
+        {
+          "feature": "refType_Add Parameter",
+          "mean_abs_shap": 0.019220207658788454
+        },
+        {
+          "feature": "FIELD_DECLARATION",
+          "mean_abs_shap": 0.01831881884709197
+        },
+        {
+          "feature": "dev_ref_com_exp",
+          "mean_abs_shap": 0.015901697453939243
+        },
+        {
+          "feature": "refactoryCount",
+          "mean_abs_shap": 0.014114019625448879
+        },
+        {
+          "feature": "leftLocationDiff",
+          "mean_abs_shap": 0.013597960998530011
+        }
+      ]
+    }
+  },
+  "average_shap_importance": {
+    "XGBoost_top_10": [
+      {
+        "feature": "dev_ref_exp",
+        "mean_abs_shap": 0.24579417183995247
+      },
+      {
+        "feature": "TYPE_DECLARATION",
+        "mean_abs_shap": 0.23112001679837704
+      },
+      {
+        "feature": "fileTouchCount",
+        "mean_abs_shap": 0.2280676133930683
+      },
+      {
+        "feature": "num_touched_before",
+        "mean_abs_shap": 0.22238301560282708
+      },
+      {
+        "feature": "dev_ref_com_exp",
+        "mean_abs_shap": 0.1856654815375805
+      },
+      {
+        "feature": "TYPE",
+        "mean_abs_shap": 0.17510787565261127
+      },
+      {
+        "feature": "SINGLE_VARIABLE_DECLARATION",
+        "mean_abs_shap": 0.17308783419430257
+      },
+      {
+        "feature": "leftLocationDiff",
+        "mean_abs_shap": 0.17140879854559898
+      },
+      {
+        "feature": "fileTouchAverage",
+        "mean_abs_shap": 0.16867927610874175
+      },
+      {
+        "feature": "age",
+        "mean_abs_shap": 0.1641566388309002
+      }
+    ],
+    "RandomForest_top_10": [
+      {
+        "feature": "TYPE_DECLARATION",
+        "mean_abs_shap": 0.023279764761863688
+      },
+      {
+        "feature": "SINGLE_VARIABLE_DECLARATION",
+        "mean_abs_shap": 0.021307654669602417
+      },
+      {
+        "feature": "fileTouchAverage",
+        "mean_abs_shap": 0.02086458391633234
+      },
+      {
+        "feature": "fileTouchCount",
+        "mean_abs_shap": 0.020808193605471793
+      },
+      {
+        "feature": "TYPE",
+        "mean_abs_shap": 0.017299287841920145
+      },
+      {
+        "feature": "METHOD_DECLARATION",
+        "mean_abs_shap": 0.01644983789995303
+      },
+      {
+        "feature": "rightLocationDiff",
+        "mean_abs_shap": 0.0158127193337799
+      },
+      {
+        "feature": "leftLocationDiff",
+        "mean_abs_shap": 0.015191304042379042
+      },
+      {
+        "feature": "refType_Add Parameter",
+        "mean_abs_shap": 0.014627935385765137
+      },
+      {
+        "feature": "refactoryCount",
+        "mean_abs_shap": 0.014371807222392364
+      }
+    ]
+  }
+}
