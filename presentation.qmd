@@ -39,6 +39,21 @@ From Ben Kenobi
 文件名过滤： 筛选出路径名中包含 "test" 的 .java 文件。
 内容分析： 使用 JavaParser 解析这些Java文件，检测其中是否包含 JUnit测试方法。这一步能有效减少误报（例如，将名为 Test.java 的普通源文件误判为测试文件）。
 
+JUnit方法：
+1. 解析 Java 文件：JavaParser 将 .java 文件的源代码转换成一颗抽象语法树，这样程序就可以方便地分析代码的结构（如类、方法、注解等）。
+
+2. 遍历并检查方法：程序遍历这个 AST，查看文件中的所有方法。
+
+3. 查找 JUnit 证据：对于每个方法，检查它是否：
+
+-   被 @Test 注解标记。
+
+-   内部调用了 JUnit 的断言方法（如 assertEquals）。
+
+-   位于一个继承了 JUnit 相关基类的类中（较老版本的做法）。
+
+4. 做出判断：只要在文件中找到任何一个符合上述条件的测试方法，就可以非常有把握地断定这个 Java 文件是一个测试文件。
+
 ## 3. 提交分类规则
 
 根据一个提交中所有重构操作所触及的文件类型，将其分为三类：
@@ -51,3 +66,239 @@ From Ben Kenobi
 
 比例计算： 对每个项目，计算三类提交各自占所有重构提交的百分比，然后汇总所有项目的分布情况（使用箱线图展示）。
 重构类型分析： 仅在共现重构提交中，提取所有应用于测试代码的重构类型，并统计它们的出现频率，找出Top 10。
+
+## 5. RQ1 主要发现
+
+频率： 共现重构提交平均占17.9%，是仅测试重构提交（8.2%）的两倍多。这证明共现重构是一种常见且重要的开发活动。
+
+常见重构类型： 在测试代码中，最常发生的重构是 Change Variable Type（修改变量类型）、Move Class（移动类）和 Rename Method（重命名方法）。这表明当源代码的结构（如类的位置、方法名、变量类型）发生变化时，测试代码必须同步调整。
+
+# 第二阶段：预测建模 (回答RQ2)
+
+这一阶段的目标是探索预测的可能性，回答“我们能否提前知道”以及“什么因素最重要”。
+
+## 1. 实验数据集构建
+
+项目选择： 从77个项目中，筛选出**10**个具有足够多“仅源代码重构”和“共现重构”提交的项目，以保证模型训练的有效性。
+
+代码覆盖：
+```{python}
+# 项目选择：筛选具有足够数据的项目
+features = sorted(features, key=lambda x: len(x[1].loc[x[1]['label'] == True].index), reverse=True)
+for project_to_test in features[:10]:  # 选择前10个项目
+    if len(project_to_test[1].index) < 300:  # 确保足够提交数
+        continue
+    found_co_occur = 0
+    for i, commit in project_to_test.iterrows():
+        if commit[-2]:  # 统计正例数量
+            found_co_occur += 1
+    if found_co_occur < 10:  # 确保足够共现提交
+        continue
+```
+
+
+**数据标注：**
+
+正例： 共现重构提交。
+
+负例： 仅源代码重构提交。
+
+（注意：仅测试重构提交不参与本阶段实验）
+
+代码覆盖：
+```{python}
+# 正例：共现重构提交，负例：仅源代码重构提交
+features['label'] = features['label'].apply(lambda x: True if x == "co-occur" else False)
+# 注意：仅测试重构提交已被排除（在temp_method中处理）
+```
+
+## 2. 特征工程
+
+这是预测模型的核心。所有特征都仅从提交中对源代码进行的重构操作中提取，主要包括四大类：
+
+重构规模特征： 如 # of refactorings（重构操作数量）、LOC left side（修改的代码行数-父提交）、# of files（涉及的文件数）等。直觉是，改动越大，波及测试代码的可能性越高。
+
+```{python}
+# 在commit_level_features.csv中包含：
+# '# of refactorings', 'LOC left side', '# of files' 等
+```
+
+开发者经验特征： 如 Developer refactoring experience（开发者历史重构次数）。经验丰富的开发者可能更了解测试代码的关联性。
+
+```{python}
+# 在temp_method()中计算：
+dev_ref_exp = developer_list[author_id]['dev_ref_exp']  # 开发者历史重构次数
+dev_ref_com_exp = developer_list[author_id]['dev_ref_com_exp']  # 开发者重构提交次数
+```
+
+文件历史特征： 如 # of previous refactorings（文件历史重构次数）。频繁被重构的文件，其测试代码可能也更需要维护。
+
+```{python}
+# 计算文件重构历史和年龄
+avg_touched_before = np.average([file_list[path]["num_touched"] 
+                               for path in files_touched.items() if path in file_list])
+average_age = np.average([file['age'] for path, file in files_touched.items()])
+```
+
+重构多样性特征： 如 # of unique refactoring types（唯一重构类型数）、Refactoring type count（每种重构类型的数量）。
+
+
+## 3. 模型训练与评估
+
+算法选择： 比较了逻辑回归、SVM和随机森林，最终随机森林表现最佳。
+
+处理数据不平衡： 使用 SMOTE 方法对训练集的正例（共现重构）进行过采样，以改善模型对少数类的学习能力。
+
+评估方法： 采用 10折交叉验证。使用 AUC（主要指标）、Precision、Recall、F1-score 作为评估指标。
+
+## 4. 特征重要性分析
+
+方法： 使用随机森林内置的基于基尼不纯度的平均减少来计算特征重要性。
+
+过程： 对10个项目分别训练出的模型，分析其特征重要性，然后进行聚合，找出全局最重要的特征。
+
+## RQ2 主要发现
+
+预测性能： 模型取得了中等偏上的性能（中位数AUC = 0.74），并在某些项目（如Kafka, Phoenix）上表现极佳（AUC最高达0.92）。这证明了仅凭源代码重构的特征来预测测试代码是否需要同步重构是可行的。
+
+关键预测因素：
+
+重构规模（如 LOC left side, # of files）是最重要的预测因子。大规模重构几乎总是需要调整测试代码。
+
+开发者经验（如 Dev refactoring experience）也非常重要。
+
+文件重构历史和涉及的代码元素类型（如方法、变量）也具有较强的指示作用。
+
+# 扩展：XGBoost与RF的比较
+
+# RF 模型训练流程
+
+代码：
+
+rf_param_grid = {
+    'bootstrap': [True],
+    'max_depth': [50, 100, 150],
+    'max_features': ['auto', 'sqrt', 'log2'],
+    'n_estimators': [50, 100, 200, 300]
+}
+
+### 第一步：使用 GridSearchCV 搜索最佳 RF 超参数
+
+RF 超参数包括：
+n_estimators	树的数量（模型容量）
+max_depth	每棵树的最大深度
+max_features	每次分裂使用的特征子集方式
+bootstrap	是否使用 bootstrap 采样
+
+GridSearchCV 做的事情是：
+
+枚举所有参数组合
+
+对每组参数执行 3-fold CV
+
+选出最优参数（比如预测 F1 / accuracy最高）
+
+### 第二步：用最佳参数重新训练 RF 模型
+
+rf_model = RandomForestClassifier(
+    bootstrap=rf_grid_search.best_params_['bootstrap'],
+    n_estimators=rf_grid_search.best_params_['n_estimators'],
+    max_depth=rf_grid_search.best_params_['max_depth'],
+    max_features=rf_grid_search.best_params_['max_features'],
+    random_state=42
+)
+rf_model.fit(X_train_resampled, y_train_resampled)
+
+训练时已经经过 SMOTE 增强，用于解决类别不平衡。
+
+### 第三步：预测与评价指标
+
+rf_preds = rf_model.predict(X_test)
+rf_metrics["auc"].append(roc_auc_score(y_test, rf_preds))
+
+指标包括：AUC, F1-Score, Accuracy, Recall, Precision
+
+## XGBoost
+
+代码：
+
+xgb_param_grid = {
+    'n_estimators': [50, 100, 200],     # 树的数量
+    'max_depth': [3, 6, 9],             # 通常比RF浅，防止过拟合
+    'learning_rate': [0.01, 0.1, 0.2],  # 学习率，控制每棵树的贡献
+    'subsample': [0.8, 0.9, 1.0]        # 样本采样比例
+}
+
+### GridSearchCV 搜索超参数
+
+搜索目标：
+n_estimators	boosting 轮数
+max_depth	叶子最大深度
+learning_rate	每棵树的学习步长
+subsample	行采样比例（bagging-like）
+
+与 RF 一样执行 3-fold CV，用 logloss 作为 eval_metric。
+
+### 最佳参数训练模型并评估
+
+xgb_model.fit(X_train_resampled, y_train_resampled)
+xgb_preds = xgb_model.predict(X_test)
+
+用同样指标评估并跨fold保存。
+
+
+## SHAP重要性分析
+
+SHAP 基于博弈论 Shapley 值：
+
+对于每个样本、每个特征计算：
+该特征对预测贡献的平均边际贡献
+
+优点：
+
+输出“模型为什么做出该预测”
+
+保证解释的公平性
+
+可以跨fold求平均，减少偏差
+
+* ？什么是平均边际贡献，详细解释
+
+
+
+┌────────────────────────────────────────┐
+│ 加载并按项目分组特征数据               │
+└────────────────────────────────────────┘
+                │
+     对每个项目 (10-fold CV)
+                ▼
+┌────────────────────────────────────────┐
+│ SMOTE 平衡训练数据                     │
+└────────────────────────────────────────┘
+                │
+                ├──► RF: GridSearchCV 选最优参数 → 训练
+                │
+                ├──► XGB: GridSearchCV 选最优 → 训练
+                │
+                ▼
+┌────────────────────────────────────────┐
+│ 评估每 fold 的预测性能 (AUC/F1/Recall) │
+└────────────────────────────────────────┘
+                │
+                ▼
+┌────────────────────────────────────────┐
+│ SHAP: TreeExplainer + |SHAP| 平均贡献  │
+│   1. 对每fold计算重要性                │
+│   2. 跨fold平均                        │
+└────────────────────────────────────────┘
+                │
+                ▼
+┌────────────────────────────────────────┐
+│ 汇总所有项目 SHAP 重要性 → 全局排名    │
+└────────────────────────────────────────┘
+                │
+                ▼
+┌───────────────────────────────────────────────┐
+│ 保存结果 JSON（模型性能 + SHAP top 10）        │
+└───────────────────────────────────────────────┘
+

@@ -136,7 +136,7 @@ The replication consists of two modules:
 -   **Replication 0f RQ1:**Analyze the dataset to calculate the distribution of commit types: source-only, test-only, co-occurring, and the most frequent test refactoring types, verifying the original study’s findings.
 -   **Replication 0f RQ2:**Implement a Random Forest classifier to predict when  refactoring test code could co-occur with source code refactoring.
 
-For the data component, the replication package provided by the original authors was downloaded from the website referenced in the original paper [5]. The authors supplied a full pipeline of preprocessing scripts rather than a finalized dataset. Using the da3 server on the World of Code virtual machine, the SmartSHARK 2.1 dataset was imported into a MongoDB environment, after which all preprocessing scripts were executed to generate the datasets referenced in the replication package. From the generated data, 53,829 commits with refactorings and 74 repositories were obtained.
+For the data component, the replication package provided by the original authors was downloaded from the website referenced in the original paper [5]. The authors supplied a full pipeline of preprocessing scripts rather than a finalized dataset. Using the da3 server on the World of Code virtual machine, the SmartSHARK 2.1 dataset was imported into its MongoDB environment, after which all preprocessing scripts were executed to generate the datasets referenced in the replication package. From the generated data, 53,829 commits with refactorings and 74 repositories were obtained.
 
 ## Replication of RQ1
 
